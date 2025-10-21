@@ -1,0 +1,41 @@
+# Question Link : "https://www.geeksforgeeks.org/problems/print-linked-list-elements/1?sortBy=submissions&category%255B%255D=Linked%2520List&page=1&difficulty%255B%255D=-1"
+
+# Question : Print Linked List
+
+You are given the head of a singly linked list. Return an array containing the values of the nodes.
+
+Examples:
+
+Input:
+    
+Output: [1, 2, 3, 4, 5]
+Explanation: The linked list contains 5 elements [1, 2, 3, 4, 5]. The elements are printed in a single line.
+
+Input:
+    
+Output: [10, 20, 30, 40, 50, 60]
+Explanation: The linked list contains 5 elements [10, 20, 30, 40, 50, 60]. The elements are printed in a single line.
+
+
+# Solution
+
+'''
+class Node:
+    def __init__(self, x):
+        self.data = x
+        self.next = None
+'''
+
+class Solution:
+    def printList(self, head):
+        # code here
+        start = head
+        temp = []
+        
+        while start is not None:
+            temp.append(start.data)
+            start = start.next
+            
+        return temp
+
+
